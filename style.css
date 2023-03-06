@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(hey.jpg);
+    background-repeat: none;
+    background-size: cover;
+    position: absolute;
+    background-attachment: fixed;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 100;
+}
+#logo{
+    text-decoration: none;
+    color: aliceblue;
+}
+#logo:hover{
+    color: crimson;
+}
+h1{
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.4s ease-in;
+    border-top-right-radius: 20px;
+    
+}
+
+nav a:hover{
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+input[type="text"]{
+    width: 150px;
+    height: 30px;
+    padding: 13px;
+    margin-top: 10px;
+    background-color: skyblue;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: width 0.5s ease-in-out;
+}
+input[type="text"]:focus{
+    width: 500px;
+}
+button{
+    height: 30px;
+    margin-top: 10px;
+    width: 40px;
+    background-color: transparent;
+    border-radius:10px;
+    color: azure;
+    outline: none;
+    border: none;
+}
+button:hover{
+    background-color: gray;
+}
+
+img{
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#homepage{
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 40px;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+    font-size: 50px;
+    animation-name: boom;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    background-position: 0 0;
+    background-image: url(text.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated 30s linear infinite;
+    
+}
+#survey{
+    position: absolute;
+    top: 400px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: azure;
+    font-size: 30px;
+    width: 300px;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px azure solid;
+    border-radius: 16px;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+#survey:hover{
+    background-image: url(hey.jpg);
+    
+}
+
+@keyframes animated{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 0;
+    }
+}
+
+@keyframes boom{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.03);
+    }
+}
+
+#aboutpage{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    margin-top: 100px;
+    margin-left: 50px;
+    padding: 15px;
+    justify-content: space-between;
+    color: azure;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+#joji{
+    margin: auto;
+    border-radius:16px ;
+}
+#para{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    text-align: center;
+
+}
+
+#para p{
+    font-size: 20px;
+    margin-top: 200px;
+}
+#services{
+   max-width: 100%;
+    height: 700px;
+    background-color: aquamarine;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    color: azure;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+#ser-container{
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+#box-container{
+    border-radius: 16px;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    border: 1px azure solid;
+    transition: 0.5s ease-in;
+}
+#box-container:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: green;
+}
+
+#box-container img{
+    overflow:hidden;
+    border-radius: 16px;
+    padding: 1px;
+}
+#moreman{
+    display: block;
+    padding: 10px;
+    color: azure;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 16px;
+    margin-left: 100px;
+    transition: 0.3s ease-in;
+    border: 1px azure solid;
+}
+#moreman:hover{
+    background-color: azure;
+    color: brown;
+}
+
+
+#contacts{
+    max-width: 100%;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color:azure;
+}
+#con-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:80px;
+    justify-content: center;
+    gap: 20px;
+}
+#locations{
+    width: 500px;
+    height: 500px;
+    color: azure;
+    line-height: 30px;
+    padding-top: 100px;
+}
+
+#contact-form{
+    width: 800px;
+    height: 550px;
+    padding: 10px;
+    display: flex;
+}
+
+#name{
+    padding: 25px;
+    width: 350px;
+    border:none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid seagreen;
+
+}
+#name:focus{
+    background-color: lightgreen;
+}
+
+#email{
+    display: inline-flex;
+    padding: 18px;
+    width: 400px;
+    border:none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid seagreen;
+}
+#email:focus{
+    background-color: lightgreen;
+}
+
+#sub{
+    padding: 25px;
+    width: 100%;
+    border:none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid seagreen;
+}
+#sub:focus{
+    background-color: lightgreen;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    border:none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+textarea:focus{
+    background-color: lightgreen;
+}
+
+input[type="submit"]{
+    padding: 10px;
+    background-color: green;
+    color: aliceblue;
+    width: 100px;
+}
+
+input[type="submit"]:hover{
+    background-color: slategray;
+    cursor: pointer;
+}
+
+
+footer{
+   margin-top: 100px;
+   width: 103.9%;
+   height: 200px;
+   background-color: rgb(138, 216, 255);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+}
+
+#footer-icon{
+    color: #333;
+    font-size: 30px;
+}
+#footer-icon:hover{
+    color: blueviolet;
+}
+
+#foot-menu ul{
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+#foot-menu li a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+#foot-menu a:hover{
+    color: blueviolet;
+}
+footer p{
+    margin-top: 20px;
+}
