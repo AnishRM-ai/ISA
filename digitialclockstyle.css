@@ -1,0 +1,28 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+body{
+    background-color: black;
+}
+#clock{
+    width: 600px;
+    height: 200px;
+    font-size: 100px;
+    font-family: monospace;
+    color: aliceblue;
+    background-color: #26252533;
+    position: absolute;
+    top: 300px;
+    left: 440px;
+    text-align: justify;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border: 2px solid orange;
+    border-radius: 50px;
+}
